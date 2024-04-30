@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    padding: 35px 153px;
+}
+
+header{
+    border: 2px solid #B17675;
+}
+
+header .main{
+    position: relative;
+    margin: 43px 111px;
+    padding: 35px;
+    padding-top: 0;
+    border: 2px solid #B17675;
+}
+
+header > h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+
+.main nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-bottom:2px solid #B17675;
+    padding-top:4px;
+    padding-bottom:4px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.main nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.main nav ul li a,
+.main nav > a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    border:2px solid #B17675;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main nav ul li a:hover,
+.main nav > a:hover{
+    background: #B17675;
+    transition: all 0.3s;
+}
+
+.main .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    overflow: scroll;
+    background-color: white;
+}
+
+
+.content h1{
+    /* margin-bottom: 40px; */
+    margin-top: 24px;
+    text-align: center;
+}
+
+.content h1::after{
+    content: "";
+    display: block;
+    width: 300px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    height: 2px;
+    background-color: #B17675;
+    margin-left: auto;
+    margin-right: auto;
+}
